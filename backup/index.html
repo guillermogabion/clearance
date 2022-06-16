@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clearance Request Form</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+
+	
+	
+	
+	
+	
+</head>
+<body>
+
+<div class="main">
+
+  <div class="container">
+    <form method="POST" class="appointment-form" id="appointment-form">
+                <h2>Clearance Request form</h2>
+                <div class="form-group-1">
+                     <div class="form-group-2">
+                   <h3>Student Information</h3>
+					   <input type="text" name="studid" id="studid" placeholder="Enter Student ID" onkeyup="isempty"required />
+<input type="text" name="name" id="name" placeholder="Your Name (Family/Given/Middle)" required />
+                  
+                  
+                    <div class="select-list">
+                        <select name="course_type" id="course_type">
+                            <option slected value="">Program/year</option>
+                            <option value="BSIT 1">BSIT 1</option>
+                            <option value="BSIT 2">BSIT 2</option>
+							 <option value="BSIT 3">BSIT 3</option>
+                            <option value="BSIT 4">BSIT 4</option>
+							   <option value="BSCS 1">BSCS 1</option>
+                            <option value="BSCS 2">BSCS 2</option>
+							 <option value="BSCS 3">BSCS 3</option>
+                            <option value="BSCS 4">BSCS 4</option>
+							 
+                            <option value="BSCRIM 1">BSCRIM 1</option>
+                            <option value="BSCRIM 2">BSCRIM 2</option>
+							 <option value="BSCRIM 3">BSCRIM 3</option>
+                            <option value="BSCRIM 4">BSCRIM 4</option>
+							   <option value="BSHM 1">BSHM 1</option>
+                            <option value="BSHM 2">BSHM 2</option>
+							 <option value="BSHM 3">BSHM 3</option>
+                            <option value="BSHM 4">BSHM 4</option>
+							
+							<option value="BEED 1">BEED 1</option>
+                            <option value="BEED 2">BEED 2</option>
+							 <option value="BEED 3">BEED 3</option>
+                            <option value="BEED 4">BEED 4</option>
+                        </select>
+                    </div>
+                </div>
+			  </div>
+				  <div class="form-group-2">
+                    <h3>Send Request to</h3>
+				 <input type="text" name="title" id="title" placeholder="Input Executive/Staff/Instructor ID" required />
+				  <input type="text" name="subcode" id="subcode" placeholder="Input Subject code (If instructor e.g. CC101) / Designation (If Executive/staff e.g. President) " required />
+				  </div>
+                <div class="form-group-2">
+                    <h3>Provide your Email Address to notify you about the status of your submitted request whether it is accepted or rejected</h3>
+                     <input type="email" name="email" id="email" placeholder="Email address" required />
+                </div>
+              
+      <div class="form-submit">
+                  <input type="submit"  value="Submit Request" name="submit" id="submit" onclick="alert('Click ok to Submit Request')" class="submit" echo="submit" />
+        </div>
+	
+      </form>
+	
+	
+	
+	
+	
+	
+	
+	<script type="text/javascript">
+		(function() {
+			$('form > input').keyup(function(){
+				var empty = false;
+				$('form > input').each(function(){
+					if ($(this).val()==''){
+						empty=true;
+					}};
+									 
+									 if (empty{
+									 $('#submit').attr('disabled','disbaled');
+									 }else{
+									$('#submit').removeattr('disabled','disabled');
+									}
+		 }};
+			}}
+	</script>
+		
+	
+	
+	
+	
+	
+	
+    </div>
+		
+
+  </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
+
+	
+
